@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +19,76 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQm-Hn-k77" customClass="RadioColorPickerButton" customModule="RadioColorPicker">
+                                <rect key="frame" x="165.5" y="195" width="44" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="Erv-vd-q2c"/>
+                                    <constraint firstAttribute="height" constant="44" id="XXx-gg-l8D"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fie-ee-IF5">
+                                <rect key="frame" x="20" y="283" width="335" height="101"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="border spacing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45J-7N-Mrh">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="f1v-j3-AoX">
+                                        <rect key="frame" x="-2" y="20.5" width="339" height="31"/>
+                                        <connections>
+                                            <action selector="didChangeBorderSpacingValue:" destination="vXZ-lx-hvc" eventType="valueChanged" id="4Ve-cz-ybh"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="border width" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUU-8Q-faW">
+                                        <rect key="frame" x="0.0" y="50.5" width="335" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Um8-l5-VqJ">
+                                        <rect key="frame" x="-2" y="71" width="339" height="31"/>
+                                        <connections>
+                                            <action selector="didChangeBorderWidthValue:" destination="vXZ-lx-hvc" eventType="valueChanged" id="InM-cR-bnr"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not selected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0B6-vw-N3n">
+                                <rect key="frame" x="139" y="154.5" width="97" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fie-ee-IF5" firstAttribute="top" secondItem="AQm-Hn-k77" secondAttribute="bottom" constant="44" id="4fP-pp-sPO"/>
+                            <constraint firstItem="fie-ee-IF5" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="D5u-8U-evT"/>
+                            <constraint firstItem="0B6-vw-N3n" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="DeP-ZD-2MU"/>
+                            <constraint firstItem="AQm-Hn-k77" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="FfD-Nu-ftm"/>
+                            <constraint firstItem="fie-ee-IF5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="JBS-9q-lg5"/>
+                            <constraint firstItem="AQm-Hn-k77" firstAttribute="top" secondItem="0B6-vw-N3n" secondAttribute="bottom" constant="20" id="LE4-tX-Fmd"/>
+                            <constraint firstAttribute="trailing" secondItem="fie-ee-IF5" secondAttribute="trailing" constant="20" id="lsn-hg-p7U"/>
+                            <constraint firstItem="fie-ee-IF5" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="omJ-VV-Yfa"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="colorPicker" destination="AQm-Hn-k77" id="M0M-4W-iou"/>
+                        <outlet property="selectedStateLabel" destination="0B6-vw-N3n" id="TtU-fI-WqV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="5.5999999999999996" y="-2.2488755622188905"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
