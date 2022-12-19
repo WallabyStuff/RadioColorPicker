@@ -8,26 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		1041C7F3805D3C719A3E46D73DDB0CC7 /* Pods-RadioColorPicker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05F90034A233BCCC85E7EFC910CEA7EE /* Pods-RadioColorPicker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		47CC347E6BB9680819353177B7CDBCDE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		4C2D13983CA2E264777B5F0C8FFDA5DE /* RadioColorPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A64C9C787761EBBED709E5B7BC4B8F5F /* RadioColorPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		514AC826AA860AE4217EFFCB0FEAD86C /* RadioColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E7F3B6F66986A630C1F8A6F417C2E /* RadioColorPicker.swift */; };
+		17B7D0CC3E16A3B8AEEC778429322C21 /* RadioColorPickerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE66F001AD0F7400B197C65F73BE457 /* RadioColorPickerButton.swift */; };
 		548A69B3C756402A54B993E70811C400 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		5A3CDD3DF6139480ED2167C4DB1AF16F /* Pods-RadioColorPicker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7915501D91A2CA67E6F004CBAB9BE7F /* Pods-RadioColorPicker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D31B1FAAE9AA8C85CF848E10D479A6A /* RadioColorPickerGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61E4033DE3834C0504A15D3BA561E59 /* RadioColorPickerGroup.swift */; };
+		9E3D370B26F582EE0D14A030977F3166 /* RadioColorPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C57005CC3CFAD113701678D3EEC0FB /* RadioColorPicker-dummy.m */; };
 		ABD7EBAA4950CD246BB7E28E801A4CD9 /* Pods-RadioColorPicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFECB5D2255C835DD1E30FB79C3AF9 /* Pods-RadioColorPicker_Example-dummy.m */; };
-		BE76BB064EFFDF51065386EA93432004 /* RadioColorPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A0DE0E315EA59CD25C30E092426D49 /* RadioColorPicker-dummy.m */; };
+		B49313E07858A13EBED83155A994C79F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		CF384F7909274AEF3977727F264AFF32 /* Pods-RadioColorPicker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9916A2EA3EEC89842DE901756A8ECD /* Pods-RadioColorPicker_Tests-dummy.m */; };
 		D048289BA5169F307E9F711CEB707AF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DB9BA25E72EB050964C59EBF7CFE86A8 /* RadioColorPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB9E7BFD679F83EB2CDC809744C96B7 /* RadioColorPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		505AE089563EABD81823650055E6FC12 /* PBXContainerItemProxy */ = {
+		7B3DA003C82139EF453B99D18BDB5AF9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F174D5934760972A2A5B7D6365813ADA;
 			remoteInfo = RadioColorPicker;
 		};
-		C51A830C3FF1328FE3D0AC1F512C6013 /* PBXContainerItemProxy */ = {
+		B82DE9D675D3DBEC37B90E5254BCE3D4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -40,52 +41,53 @@
 		05F90034A233BCCC85E7EFC910CEA7EE /* Pods-RadioColorPicker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RadioColorPicker_Tests-umbrella.h"; sourceTree = "<group>"; };
 		10C196624E71C2DD58707C4610E05E9F /* Pods-RadioColorPicker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RadioColorPicker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1CE87E1A5F33AE59C428FD1EF88109EB /* Pods-RadioColorPicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RadioColorPicker_Example.modulemap"; sourceTree = "<group>"; };
-		2728A6E73F84CDF7FB4084C57C821140 /* RadioColorPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RadioColorPicker-prefix.pch"; sourceTree = "<group>"; };
+		1FB9E7BFD679F83EB2CDC809744C96B7 /* RadioColorPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RadioColorPicker-umbrella.h"; sourceTree = "<group>"; };
+		26C57005CC3CFAD113701678D3EEC0FB /* RadioColorPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RadioColorPicker-dummy.m"; sourceTree = "<group>"; };
 		31709873E2F14B4E9DAC5F7D774A2E03 /* Pods-RadioColorPicker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RadioColorPicker_Tests.modulemap"; sourceTree = "<group>"; };
-		3CEBD47BA8F1ECA5F3E780FCB48791FB /* RadioColorPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RadioColorPicker.release.xcconfig; sourceTree = "<group>"; };
+		34BD902F9A5AFD37D28FC3D6E858F7BA /* RadioColorPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RadioColorPicker-Info.plist"; sourceTree = "<group>"; };
 		5494A9E36D2295A4088059FD96870ADE /* Pods-RadioColorPicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RadioColorPicker_Example.release.xcconfig"; sourceTree = "<group>"; };
 		56068BD0E7AE3FEEA8CFF834AD0D78F1 /* Pods-RadioColorPicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RadioColorPicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		5923281D99CD13C00D30FEAEF07AD8A9 /* RadioColorPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RadioColorPicker-Info.plist"; sourceTree = "<group>"; };
-		5C466F0B852F56EF64A992562E6D7008 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		6CDFECB5D2255C835DD1E30FB79C3AF9 /* Pods-RadioColorPicker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RadioColorPicker_Example-dummy.m"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7330BAE9BA5AB6FC600E33094B6BEF5F /* RadioColorPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RadioColorPicker.debug.xcconfig; sourceTree = "<group>"; };
 		79581C1EE4FE44092C81D0B288F3A20E /* Pods-RadioColorPicker_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RadioColorPicker_Example-Info.plist"; sourceTree = "<group>"; };
 		815A1F77AE207C3AF505328F5CF3D077 /* RadioColorPicker */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RadioColorPicker; path = RadioColorPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		82A0DE0E315EA59CD25C30E092426D49 /* RadioColorPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RadioColorPicker-dummy.m"; sourceTree = "<group>"; };
-		91B100B127D2C36F54F13A7D6279F6E8 /* RadioColorPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RadioColorPicker.debug.xcconfig; sourceTree = "<group>"; };
 		97C76592E1943922D965DDD10AEB107D /* Pods-RadioColorPicker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RadioColorPicker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9876B98180B2BFFF23FA385039F09B15 /* Pods-RadioColorPicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RadioColorPicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9FF6E330A2B15543250275DCF8273947 /* Pods-RadioColorPicker_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RadioColorPicker_Tests-Info.plist"; sourceTree = "<group>"; };
-		A64C9C787761EBBED709E5B7BC4B8F5F /* RadioColorPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RadioColorPicker-umbrella.h"; sourceTree = "<group>"; };
+		A979310424A3975A938CFD29F72D17A0 /* RadioColorPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RadioColorPicker-prefix.pch"; sourceTree = "<group>"; };
+		AAE66F001AD0F7400B197C65F73BE457 /* RadioColorPickerButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadioColorPickerButton.swift; path = Sources/RadioColorPickerButton.swift; sourceTree = "<group>"; };
 		AB708E67EF3145296B1A4737F6F86342 /* Pods-RadioColorPicker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RadioColorPicker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		ADD0E1A7ACD39DDF0C01CD3B6F1CEBBB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B61E4033DE3834C0504A15D3BA561E59 /* RadioColorPickerGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadioColorPickerGroup.swift; path = Sources/RadioColorPickerGroup.swift; sourceTree = "<group>"; };
 		BB9916A2EA3EEC89842DE901756A8ECD /* Pods-RadioColorPicker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RadioColorPicker_Tests-dummy.m"; sourceTree = "<group>"; };
 		C8DA8F09FC60BC719AC8FB252A08E4D0 /* Pods-RadioColorPicker_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-RadioColorPicker_Example"; path = Pods_RadioColorPicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDB02291939382E8BADB2EB4BC7914F5 /* Pods-RadioColorPicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RadioColorPicker_Example-frameworks.sh"; sourceTree = "<group>"; };
-		CE5E7F3B6F66986A630C1F8A6F417C2E /* RadioColorPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadioColorPicker.swift; path = Sources/RadioColorPicker.swift; sourceTree = "<group>"; };
+		CFBC431D24698CA5C3CD38DEBFD23A8A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D61F9379BDE5CF8745FC9E20CDFEBE07 /* RadioColorPicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = RadioColorPicker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DEB6F1CCB169725C3FE38F33AA1CE975 /* Pods-RadioColorPicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RadioColorPicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E0213010D287417652642CE044091F77 /* RadioColorPicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = RadioColorPicker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E1495E05AC140FDAF4FA04784958402D /* Pods-RadioColorPicker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RadioColorPicker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E2CA3595CE6E0F6DC9425858BE88D3F9 /* RadioColorPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RadioColorPicker.release.xcconfig; sourceTree = "<group>"; };
 		E7915501D91A2CA67E6F004CBAB9BE7F /* Pods-RadioColorPicker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RadioColorPicker_Example-umbrella.h"; sourceTree = "<group>"; };
-		E9BC099A1C9D609455AC43569116B495 /* RadioColorPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RadioColorPicker.modulemap; sourceTree = "<group>"; };
 		EA549E2075E568A169C8935775CCC0E0 /* Pods-RadioColorPicker_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-RadioColorPicker_Tests"; path = Pods_RadioColorPicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF3A4331701757182B908EAA57B88F0E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		EE38D56AF017B9599D1F3E192AE5DF98 /* RadioColorPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RadioColorPicker.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B885107C03345D8DD9AFC67EF67A656F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B49313E07858A13EBED83155A994C79F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C48D5AD3FC05C2CE7F831E6FD153C748 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				548A69B3C756402A54B993E70811C400 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C871FE0AABE4ED2D57C3689D5E2CC11A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				47CC347E6BB9680819353177B7CDBCDE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +110,21 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		59114BA7E3E0CAFEA32650A3F87EF69E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE38D56AF017B9599D1F3E192AE5DF98 /* RadioColorPicker.modulemap */,
+				26C57005CC3CFAD113701678D3EEC0FB /* RadioColorPicker-dummy.m */,
+				34BD902F9A5AFD37D28FC3D6E858F7BA /* RadioColorPicker-Info.plist */,
+				A979310424A3975A938CFD29F72D17A0 /* RadioColorPicker-prefix.pch */,
+				1FB9E7BFD679F83EB2CDC809744C96B7 /* RadioColorPicker-umbrella.h */,
+				7330BAE9BA5AB6FC600E33094B6BEF5F /* RadioColorPicker.debug.xcconfig */,
+				E2CA3595CE6E0F6DC9425858BE88D3F9 /* RadioColorPicker.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/RadioColorPicker";
+			sourceTree = "<group>";
+		};
 		6D3619066247B719DB4E757DA93E56A2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +133,36 @@
 				815A1F77AE207C3AF505328F5CF3D077 /* RadioColorPicker */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7537BE26FB1DC0F428E5E022212A6FA0 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F1FD4D2D5AAB49B3BAC83A77B3957C4 /* RadioColorPicker */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7F1FD4D2D5AAB49B3BAC83A77B3957C4 /* RadioColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				B61E4033DE3834C0504A15D3BA561E59 /* RadioColorPickerGroup.swift */,
+				AAE66F001AD0F7400B197C65F73BE457 /* RadioColorPickerButton.swift */,
+				886E57D9BA90819D2A20FDB5806171E0 /* Pod */,
+				59114BA7E3E0CAFEA32650A3F87EF69E /* Support Files */,
+			);
+			name = RadioColorPicker;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		886E57D9BA90819D2A20FDB5806171E0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				CFBC431D24698CA5C3CD38DEBFD23A8A /* LICENSE */,
+				D61F9379BDE5CF8745FC9E20CDFEBE07 /* RadioColorPicker.podspec */,
+				ADD0E1A7ACD39DDF0C01CD3B6F1CEBBB /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		88E934D8C8C94CCD47AB393803C24595 /* Pods-RadioColorPicker_Tests */ = {
@@ -134,17 +181,6 @@
 			path = "Target Support Files/Pods-RadioColorPicker_Tests";
 			sourceTree = "<group>";
 		};
-		9598F3112AE222198AAE446E0DA976FB /* RadioColorPicker */ = {
-			isa = PBXGroup;
-			children = (
-				CE5E7F3B6F66986A630C1F8A6F417C2E /* RadioColorPicker.swift */,
-				D4E118B2984533C238458EADC8BCE135 /* Pod */,
-				A8768A18374925F10290FA7486F6D8E2 /* Support Files */,
-			);
-			name = RadioColorPicker;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		9EE718C2B4258ABBF342181D8219C31A /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,34 +190,11 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		A8768A18374925F10290FA7486F6D8E2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E9BC099A1C9D609455AC43569116B495 /* RadioColorPicker.modulemap */,
-				82A0DE0E315EA59CD25C30E092426D49 /* RadioColorPicker-dummy.m */,
-				5923281D99CD13C00D30FEAEF07AD8A9 /* RadioColorPicker-Info.plist */,
-				2728A6E73F84CDF7FB4084C57C821140 /* RadioColorPicker-prefix.pch */,
-				A64C9C787761EBBED709E5B7BC4B8F5F /* RadioColorPicker-umbrella.h */,
-				91B100B127D2C36F54F13A7D6279F6E8 /* RadioColorPicker.debug.xcconfig */,
-				3CEBD47BA8F1ECA5F3E780FCB48791FB /* RadioColorPicker.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/RadioColorPicker";
-			sourceTree = "<group>";
-		};
-		B4135920D89364D68EEFBC8756F90586 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9598F3112AE222198AAE446E0DA976FB /* RadioColorPicker */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				B4135920D89364D68EEFBC8756F90586 /* Development Pods */,
+				7537BE26FB1DC0F428E5E022212A6FA0 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				6D3619066247B719DB4E757DA93E56A2 /* Products */,
 				9EE718C2B4258ABBF342181D8219C31A /* Targets Support Files */,
@@ -194,16 +207,6 @@
 				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D4E118B2984533C238458EADC8BCE135 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				FF3A4331701757182B908EAA57B88F0E /* LICENSE */,
-				E0213010D287417652642CE044091F77 /* RadioColorPicker.podspec */,
-				5C466F0B852F56EF64A992562E6D7008 /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		ECB2BAD40A5A654DD9B9BECAEED0578C /* Pods-RadioColorPicker_Example */ = {
@@ -234,19 +237,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		86F950AA6BBB4D231EEB2BB74E137525 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB9BA25E72EB050964C59EBF7CFE86A8 /* RadioColorPicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C0BE139733FAE078F7405D2678140A37 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1041C7F3805D3C719A3E46D73DDB0CC7 /* Pods-RadioColorPicker_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F64E96DD63D6F3CEC0DAD1D71EB791E7 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4C2D13983CA2E264777B5F0C8FFDA5DE /* RadioColorPicker-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +268,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				C6BBDF5D550819AEEE6C067D74A59A2C /* PBXTargetDependency */,
+				FE255FE915CCF00E760BE268F8BD6427 /* PBXTargetDependency */,
 			);
 			name = "Pods-RadioColorPicker_Tests";
 			productName = Pods_RadioColorPicker_Tests;
@@ -284,7 +287,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				7C5A5DFB01D30F0C46D59864DFAA90E9 /* PBXTargetDependency */,
+				8F347D613566D489F66D45A674E09694 /* PBXTargetDependency */,
 			);
 			name = "Pods-RadioColorPicker_Example";
 			productName = Pods_RadioColorPicker_Example;
@@ -293,12 +296,12 @@
 		};
 		F174D5934760972A2A5B7D6365813ADA /* RadioColorPicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 29215C47095C4CC82337B9722F6DE6B1 /* Build configuration list for PBXNativeTarget "RadioColorPicker" */;
+			buildConfigurationList = 347172766B1683BD519C07AEDE542727 /* Build configuration list for PBXNativeTarget "RadioColorPicker" */;
 			buildPhases = (
-				F64E96DD63D6F3CEC0DAD1D71EB791E7 /* Headers */,
-				9EEF562043C7A4AB3321F42C73464911 /* Sources */,
-				C871FE0AABE4ED2D57C3689D5E2CC11A /* Frameworks */,
-				66D63E60EE1EECBEC8FAD54C1AB1DACB /* Resources */,
+				86F950AA6BBB4D231EEB2BB74E137525 /* Headers */,
+				90B8DEAC288B62D6B208DA62241A8B43 /* Sources */,
+				B885107C03345D8DD9AFC67EF67A656F /* Frameworks */,
+				D5C508F5E94B9C32B1E55D037B067867 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -346,14 +349,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		66D63E60EE1EECBEC8FAD54C1AB1DACB /* Resources */ = {
+		9EB9EFAAD1B22304D3FFE5D413A195A7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9EB9EFAAD1B22304D3FFE5D413A195A7 /* Resources */ = {
+		D5C508F5E94B9C32B1E55D037B067867 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -371,12 +374,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9EEF562043C7A4AB3321F42C73464911 /* Sources */ = {
+		90B8DEAC288B62D6B208DA62241A8B43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				514AC826AA860AE4217EFFCB0FEAD86C /* RadioColorPicker.swift in Sources */,
-				BE76BB064EFFDF51065386EA93432004 /* RadioColorPicker-dummy.m in Sources */,
+				17B7D0CC3E16A3B8AEEC778429322C21 /* RadioColorPickerButton.swift in Sources */,
+				5D31B1FAAE9AA8C85CF848E10D479A6A /* RadioColorPickerGroup.swift in Sources */,
+				9E3D370B26F582EE0D14A030977F3166 /* RadioColorPicker-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,54 +395,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7C5A5DFB01D30F0C46D59864DFAA90E9 /* PBXTargetDependency */ = {
+		8F347D613566D489F66D45A674E09694 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RadioColorPicker;
 			target = F174D5934760972A2A5B7D6365813ADA /* RadioColorPicker */;
-			targetProxy = 505AE089563EABD81823650055E6FC12 /* PBXContainerItemProxy */;
+			targetProxy = 7B3DA003C82139EF453B99D18BDB5AF9 /* PBXContainerItemProxy */;
 		};
-		C6BBDF5D550819AEEE6C067D74A59A2C /* PBXTargetDependency */ = {
+		FE255FE915CCF00E760BE268F8BD6427 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-RadioColorPicker_Example";
 			target = ECB106A8C73E8432E31F7DDC4E30B664 /* Pods-RadioColorPicker_Example */;
-			targetProxy = C51A830C3FF1328FE3D0AC1F512C6013 /* PBXContainerItemProxy */;
+			targetProxy = B82DE9D675D3DBEC37B90E5254BCE3D4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1B9C69336BC5D88AD2CE3F1E98658BB9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CEBD47BA8F1ECA5F3E780FCB48791FB /* RadioColorPicker.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RadioColorPicker/RadioColorPicker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RadioColorPicker/RadioColorPicker-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/RadioColorPicker/RadioColorPicker.modulemap";
-				PRODUCT_MODULE_NAME = RadioColorPicker;
-				PRODUCT_NAME = RadioColorPicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		3F729A5E4133A27987B3725FF3F5CF26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9876B98180B2BFFF23FA385039F09B15 /* Pods-RadioColorPicker_Tests.debug.xcconfig */;
@@ -563,8 +534,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -671,9 +641,9 @@
 			};
 			name = Release;
 		};
-		BD2A10BF81C4AD90F3B7C46D40576020 /* Debug */ = {
+		CFC9B77E173BDF556C7BE8DFE82A8863 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91B100B127D2C36F54F13A7D6279F6E8 /* RadioColorPicker.debug.xcconfig */;
+			baseConfigurationReference = E2CA3595CE6E0F6DC9425858BE88D3F9 /* RadioColorPicker.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -698,10 +668,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		D4A5712EFDA50E36D117CC5208E24C9A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -737,14 +708,46 @@
 			};
 			name = Debug;
 		};
+		E93B46047F133AEAFD9ECD81DB9BC266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7330BAE9BA5AB6FC600E33094B6BEF5F /* RadioColorPicker.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RadioColorPicker/RadioColorPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RadioColorPicker/RadioColorPicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RadioColorPicker/RadioColorPicker.modulemap";
+				PRODUCT_MODULE_NAME = RadioColorPicker;
+				PRODUCT_NAME = RadioColorPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		29215C47095C4CC82337B9722F6DE6B1 /* Build configuration list for PBXNativeTarget "RadioColorPicker" */ = {
+		347172766B1683BD519C07AEDE542727 /* Build configuration list for PBXNativeTarget "RadioColorPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BD2A10BF81C4AD90F3B7C46D40576020 /* Debug */,
-				1B9C69336BC5D88AD2CE3F1E98658BB9 /* Release */,
+				E93B46047F133AEAFD9ECD81DB9BC266 /* Debug */,
+				CFC9B77E173BDF556C7BE8DFE82A8863 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
