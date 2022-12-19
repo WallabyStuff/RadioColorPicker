@@ -1,0 +1,16 @@
+PODS:
+  - RadioColorPicker (0.1.0)
+
+DEPENDENCIES:
+  - RadioColorPicker (from `../`)
+
+EXTERNAL SOURCES:
+  RadioColorPicker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RadioColorPicker: a3e6e48a27ebefba08253d7d1808354237cd868d
+
+PODFILE CHECKSUM: bea30b00c882a2a46985530fd5cfb32969773b5c
+
+COCOAPODS: 1.11.3

@@ -22,7 +22,7 @@ pod 'RadioColorPicker'
 
 ## Author
 
-SunneyG, avocado34.131@gmail.com
+Wallaby, avocado34.131@gmail.com
 
 ## License
 

@@ -1,0 +1,6 @@
+framework module RadioColorPicker {
+  umbrella header "RadioColorPicker-umbrella.h"
+
+  export *
+  module * { export * }
+}

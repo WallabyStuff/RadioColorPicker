@@ -1,0 +1,6 @@
+framework module Pods_RadioColorPicker_Tests {
+  umbrella header "Pods-RadioColorPicker_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

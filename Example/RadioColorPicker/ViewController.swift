@@ -2,23 +2,17 @@
 //  ViewController.swift
 //  RadioColorPicker
 //
-//  Created by SunneyG on 12/19/2022.
-//  Copyright (c) 2022 SunneyG. All rights reserved.
+//  Created by Wallaby on 12/19/2022.
+//  Copyright (c) 2022 Wallaby. All rights reserved.
 //
 
 import UIKit
+import RadioColorPicker
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+  }
 }
 
