@@ -1,5 +1,5 @@
 import XCTest
-import RadioColorPicker
+//import RadioColorPicker
 
 class Tests: XCTestCase {
     
