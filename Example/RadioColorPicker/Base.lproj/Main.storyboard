@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LQu-Zn-E6b" customClass="RadioColorPicker" customModule="RadioColorPicker">
-                                <rect key="frame" x="0.0" y="117.33333333333333" width="393" height="214.66666666666669"/>
+                                <rect key="frame" x="16" y="117.33333333333333" width="361" height="214.66666666666669"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ex-QD-BD5">
@@ -217,16 +217,16 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="3Ex-QD-BD5" firstAttribute="top" secondItem="LQu-Zn-E6b" secondAttribute="bottom" id="0gT-hO-NiI"/>
-                            <constraint firstItem="LQu-Zn-E6b" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="5xf-aW-frP"/>
                             <constraint firstAttribute="trailing" secondItem="DKM-wR-ehm" secondAttribute="trailing" id="6Px-9e-nnh"/>
                             <constraint firstAttribute="bottom" secondItem="3Ex-QD-BD5" secondAttribute="bottom" id="8UB-fW-R94"/>
-                            <constraint firstAttribute="trailing" secondItem="LQu-Zn-E6b" secondAttribute="trailing" id="Hq9-O6-QsN"/>
                             <constraint firstItem="DKM-wR-ehm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="MPk-Ky-S60"/>
                             <constraint firstAttribute="trailing" secondItem="3Ex-QD-BD5" secondAttribute="trailing" id="NjL-mn-0Sm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LQu-Zn-E6b" secondAttribute="trailing" id="QaY-bl-yiJ"/>
+                            <constraint firstItem="LQu-Zn-E6b" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="U06-sx-kop"/>
                             <constraint firstItem="DKM-wR-ehm" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Vpe-tG-sXm"/>
-                            <constraint firstItem="LQu-Zn-E6b" firstAttribute="top" secondItem="DKM-wR-ehm" secondAttribute="bottom" id="dLH-JQ-6jE"/>
                             <constraint firstItem="3Ex-QD-BD5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="qa9-23-aJa"/>
+                            <constraint firstItem="LQu-Zn-E6b" firstAttribute="top" secondItem="DKM-wR-ehm" secondAttribute="bottom" id="qwE-RD-3So"/>
+                            <constraint firstItem="3Ex-QD-BD5" firstAttribute="top" secondItem="LQu-Zn-E6b" secondAttribute="bottom" id="z5R-Dw-gU0"/>
                         </constraints>
                     </view>
                     <connections>
@@ -242,6 +242,11 @@
             <point key="canvasLocation" x="5.343511450381679" y="-2.8169014084507045"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="LQu-Zn-E6b">
+            <size key="intrinsicContentSize" width="-8" height="36"/>
+        </designable>
+    </designables>
     <resources>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

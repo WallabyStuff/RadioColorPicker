@@ -24,6 +24,7 @@ public enum RadioColorPickerScrollDirection {
   @objc optional func didItemDeselected(index: Int, color: UIColor)
 }
 
+@IBDesignable
 open class RadioColorPicker: UIView {
   
   // MARK: - Constants
@@ -101,7 +102,9 @@ open class RadioColorPicker: UIView {
     }
   }
   open override var intrinsicContentSize: CGSize {
-    return collectionView.contentSize
+    let width = CGFloat(colors.count) * pickerSize + contentInset.leading + contentInset.trailing + CGFloat(colors.count - 1) * horizontalSpacing
+    let height = pickerSize + contentInset.top + contentInset.bottom
+    return .init(width: width, height: height)
   }
   
   
@@ -202,7 +205,7 @@ open class RadioColorPicker: UIView {
   
   open func addColor(_ color: UIColor) {
     colors.append(color)
-    reloadDataSelected()
+    updateLayout()
   }
   
   open func removeColor() {
@@ -210,7 +213,7 @@ open class RadioColorPicker: UIView {
     let indexPath = IndexPath(item: colors.count - 1, section: 0)
     collectionView.deselectItem(at: indexPath, animated: false)
     colors.removeLast()
-    reloadDataSelected()
+    updateLayout()
   }
   
   open func removeColor(at index: Int) {
@@ -218,7 +221,7 @@ open class RadioColorPicker: UIView {
     let indexPath = IndexPath(item: index, section: 0)
     collectionView.deselectItem(at: indexPath, animated: false)
     colors.remove(at: index)
-    reloadDataSelected()
+    updateLayout()
   }
   
   open func setSelected(index: Int) {
@@ -242,6 +245,7 @@ open class RadioColorPicker: UIView {
     collectionView.collectionViewLayout = newLayout
     reloadDataSelected()
     collectionView.collectionViewLayout.invalidateLayout()
+    invalidateIntrinsicContentSize()
   }
   
   private func reloadDataSelected() {
