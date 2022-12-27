@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  RadioColorPicker
 //
-//  Created by SunneyG on 12/19/2022.
-//  Copyright (c) 2022 SunneyG. All rights reserved.
+//  Created by Wallaby on 12/19/2022.
+//  Copyright (c) 2022 Wallaby. All rights reserved.
 //
 
 import UIKit
