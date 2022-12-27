@@ -1,23 +1,61 @@
 //
-//  ColorPickerButton.swift
+//  RadioColorPickerCollectionViewCell.swift
 //  RadioColorPicker
 //
-//  Created by Wallaby on 12/19/2022.
+//  Created by Wallaby on 2022/12/23.
 //  Copyright (c) 2022 Wallaby. All rights reserved.
 //
 
 import UIKit
 
-public protocol RadioColorPickerButtonDelegate {
-  func didChangeSelectedState(isSelected: Bool)
-}
-
-public class RadioColorPickerButton: UIControl {
+public class RadioColorPickerCollectionViewCell: UICollectionViewCell {
+  
+  // MARK: - Constants
+  
+  static let identifier = "RadioColorPickerCell"
+  struct Metric {
+    static let animationDuration: CGFloat = 0.4
+    static let animationDelay: CGFloat = 0
+    static let springDamping: CGFloat = 0.6
+    static let initialSpringVelocity: CGFloat = 0.8
+    static let defaultBorderSpacing: CGFloat = 2
+    static let defaultBorderWidth: CGFloat = 1.5
+  }
+  
   
   // MARK: - Properties
   
-  public var delegate: RadioColorPickerButtonDelegate?
   private var oldFrame: CGRect = .zero
+  open override var isSelected: Bool {
+    willSet {
+      if isSelected == newValue { return }
+      newValue ? setSelected(animation: true) : setDeselected(animation: true)
+    }
+  }
+  private var animationDuration = Metric.animationDuration
+  private var animationDelay = Metric.animationDelay
+  private var springDamping = Metric.springDamping
+  private var initialSpringVelocity = Metric.initialSpringVelocity
+  private var borderSpacing = Metric.defaultBorderSpacing {
+    willSet {
+      updateView()
+    }
+  }
+  private var borderWidth = Metric.defaultBorderWidth {
+    willSet {
+      outerStrokeView.layer.borderWidth = newValue
+      updateView()
+    }
+  }
+  private var color: UIColor = .systemBlue {
+    willSet {
+      outerStrokeView.layer.borderColor = newValue.cgColor
+      innerCircleView.backgroundColor = newValue
+    }
+  }
+  private var totalSpacing: CGFloat {
+    return borderWidth + borderSpacing
+  }
   
   
   // MARK: - UI
@@ -27,52 +65,20 @@ public class RadioColorPickerButton: UIControl {
   private var innerCircleLeadingConstraint: NSLayoutConstraint!
   private var innerCircleTrailingConstraint: NSLayoutConstraint!
   private var innerCircleBottomConstraint: NSLayoutConstraint!
-  private lazy var outerStrokeView = UIView()
-  public var borderSpacing: CGFloat = 2 {
-    didSet {
-      updateView()
-    }
-  }
-  public var borderWidth: CGFloat = 1.5 {
-    didSet {
-      outerStrokeView.layer.borderWidth = oldValue
-      updateView()
-    }
-  }
-  public var color: UIColor = .systemBlue {
-    didSet {
-      outerStrokeView.layer.borderColor = oldValue.cgColor
-      innerCircleView.backgroundColor = oldValue
-    }
-  }
-  private var totalSpacing: CGFloat {
-    return borderWidth + borderSpacing
-  }
-  public var animationDuration: CGFloat = 0.4
-  public var animationDelay: CGFloat = 0
-  public var springDamping: CGFloat = 0.6
-  public var initialSpringVelocity: CGFloat = 0.8
+  private var outerStrokeView = UIView()
   
   
   // MARK: - Initializers
   
-  override init(frame: CGRect) {
+  public override init(frame: CGRect) {
     super.init(frame: frame)
     setup()
   }
   
-  convenience init(initialSelectedState: Bool) {
-    self.init(frame: .zero)
-    initialSelectedState ? setSelected() : setDeselected()
-  }
-  
-  required init?(coder: NSCoder) {
+  public required init?(coder: NSCoder) {
     super.init(coder: coder)
     setup()
   }
-  
-  
-  // MARK: - LifeCycles
   
   public override func layoutSubviews() {
     super.layoutSubviews()
@@ -82,7 +88,19 @@ public class RadioColorPickerButton: UIControl {
     }
   }
   
- 
+  
+  // MARK: - LifeCyle
+  
+  open override func prepareForReuse() {
+    super.prepareForReuse()
+    if isSelected {
+      setSelected(animation: false)
+    } else {
+      setDeselected(animation: false)
+    }
+  }
+  
+  
   // MARK: - Setups
   
   private func setup() {
@@ -90,9 +108,9 @@ public class RadioColorPickerButton: UIControl {
   }
   
   private func setupView() {
+    clipsToBounds = false
     setupOuterStrokeView()
     setupInnerCircleView()
-    setupGesture()
   }
   
   private func setupOuterStrokeView() {
@@ -118,13 +136,13 @@ public class RadioColorPickerButton: UIControl {
     addSubview(innerCircleView)
     innerCircleView.translatesAutoresizingMaskIntoConstraints = false
     innerCircleTopConstraint = innerCircleView.topAnchor
-      .constraint(equalTo: self.topAnchor)
+      .constraint(equalTo: topAnchor)
     innerCircleLeadingConstraint = innerCircleView.leadingAnchor
-      .constraint(equalTo: self.leadingAnchor)
+      .constraint(equalTo: leadingAnchor)
     innerCircleTrailingConstraint = innerCircleView.trailingAnchor
-      .constraint(equalTo: self.trailingAnchor)
+      .constraint(equalTo: trailingAnchor)
     innerCircleBottomConstraint = innerCircleView.bottomAnchor
-      .constraint(equalTo: self.bottomAnchor)
+      .constraint(equalTo: bottomAnchor)
     NSLayoutConstraint.activate([
       innerCircleTopConstraint,
       innerCircleLeadingConstraint,
@@ -136,29 +154,23 @@ public class RadioColorPickerButton: UIControl {
     innerCircleView.layer.cornerRadius = self.innerCircleView.frame.width / 2
   }
   
-  private func setupGesture() {
-    self.addTarget(self, action: #selector(didTapColorPickerButton), for: .touchUpInside)
-  }
-  
   
   // MARK: - Methods
   
-  public func setSelected() {
-    isSelected = true
-    playSelectedAnimation()
-    delegate?.didChangeSelectedState(isSelected: true)
-  }
+  public func configure(
+    color: UIColor,
+    borderSpacing: CGFloat,
+    borderWidth: CGFloat) {
+      self.color = color
+      self.borderSpacing = borderSpacing
+      self.borderWidth = borderWidth
+    }
   
-  public func setDeselected() {
-    isSelected = false
-    playDeselectedAnimation()
-    delegate?.didChangeSelectedState(isSelected: false)
-  }
-  
-  private func playSelectedAnimation() {
+  private func setSelected(animation: Bool = true) {
+    let duration = animation ? animationDuration : 0
     setInnerCircleSpacing(common: totalSpacing)
     UIView.animate(
-      withDuration: animationDuration,
+      withDuration: duration,
       delay: animationDelay,
       usingSpringWithDamping: springDamping,
       initialSpringVelocity: initialSpringVelocity) {
@@ -168,10 +180,11 @@ public class RadioColorPickerButton: UIControl {
       }
   }
   
-  private func playDeselectedAnimation() {
+  private func setDeselected(animation: Bool = true) {
+    let duration = animation ? animationDuration : 0
     setInnerCircleSpacing(common: 0)
     UIView.animate(
-      withDuration: animationDuration,
+      withDuration: duration,
       delay: animationDelay,
       usingSpringWithDamping: springDamping,
       initialSpringVelocity: initialSpringVelocity) {
@@ -192,10 +205,5 @@ public class RadioColorPickerButton: UIControl {
     if isSelected { setInnerCircleSpacing(common: borderSpacing + borderWidth) }
     outerStrokeView.layer.cornerRadius = outerStrokeView.frame.width / 2
     innerCircleView.layer.cornerRadius = innerCircleView.frame.width / 2
-  }
-  
-  @objc
-  private func didTapColorPickerButton(_ sender: UIControl) {
-    isSelected ? setDeselected() : setSelected()
   }
 }
