@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RadioColorPicker: 96c1c1b9ffd4ec7d816e128a074d21cf1e295baa
+  RadioColorPicker: d698ee589d841d8384919cd6fddb68debb28610f
 
 PODFILE CHECKSUM: c82bea26919ba0d25cf9658f6a786d2a2cbf9a6f
 
