@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LQu-Zn-E6b" customClass="RadioColorPicker" customModule="RadioColorPicker">
-                                <rect key="frame" x="16" y="117.33333333333333" width="361" height="214.66666666666669"/>
+                                <rect key="frame" x="16" y="117.33333333333333" width="362" height="214.66666666666669"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ex-QD-BD5">
@@ -221,9 +221,9 @@
                             <constraint firstAttribute="bottom" secondItem="3Ex-QD-BD5" secondAttribute="bottom" id="8UB-fW-R94"/>
                             <constraint firstItem="DKM-wR-ehm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="MPk-Ky-S60"/>
                             <constraint firstAttribute="trailing" secondItem="3Ex-QD-BD5" secondAttribute="trailing" id="NjL-mn-0Sm"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="LQu-Zn-E6b" secondAttribute="trailing" id="QaY-bl-yiJ"/>
                             <constraint firstItem="LQu-Zn-E6b" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="U06-sx-kop"/>
                             <constraint firstItem="DKM-wR-ehm" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Vpe-tG-sXm"/>
+                            <constraint firstAttribute="trailing" secondItem="LQu-Zn-E6b" secondAttribute="trailing" constant="15" id="W2j-YQ-5Qj"/>
                             <constraint firstItem="3Ex-QD-BD5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="qa9-23-aJa"/>
                             <constraint firstItem="LQu-Zn-E6b" firstAttribute="top" secondItem="DKM-wR-ehm" secondAttribute="bottom" id="qwE-RD-3So"/>
                             <constraint firstItem="3Ex-QD-BD5" firstAttribute="top" secondItem="LQu-Zn-E6b" secondAttribute="bottom" id="z5R-Dw-gU0"/>
@@ -244,7 +244,7 @@
     </scenes>
     <designables>
         <designable name="LQu-Zn-E6b">
-            <size key="intrinsicContentSize" width="-8" height="36"/>
+            <size key="intrinsicContentSize" width="0.0" height="36"/>
         </designable>
     </designables>
     <resources>
