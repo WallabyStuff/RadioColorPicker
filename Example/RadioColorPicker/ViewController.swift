@@ -67,9 +67,7 @@ class ViewController: UIViewController {
     radioColorPicker.addColor(.systemGreen)
     radioColorPicker.addColor(.systemBlue)
     radioColorPicker.addColor(.systemPurple)
-    radioColorPicker.backgroundColor = .black
-    
-//    radioColorPicker.contentInset = .init(top: 20, leading: 24, bottom: 20, trailing: 24)
+    radioColorPicker.contentInset = .init(top: 20, leading: 24, bottom: 20, trailing: 24)
     radioColorPicker.delegate = self
   }
 
