@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RadioColorPicker'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = '사용하기 쉽고 알잘딱 할 줄 아는 ColorPicker'
   s.swift_versions   = '5.0'
 

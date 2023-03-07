@@ -1,10 +1,15 @@
-# RadioColorPicker
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/63496607/215957086-5882c876-b827-4e5e-af8d-2ecc0c673876.png" width="100">
+  <h1>RadioColorPicker</h1>
+ 
+  [![CI Status](https://img.shields.io/travis/SunneyG/RadioColorPicker.svg?style=flat)](https://travis-ci.org/SunneyG/RadioColorPicker)
+  [![Version](https://img.shields.io/cocoapods/v/RadioColorPicker.svg?style=flat)](https://cocoapods.org/pods/RadioColorPicker)
+  [![License](https://img.shields.io/cocoapods/l/RadioColorPicker.svg?style=flat)](https://cocoapods.org/pods/RadioColorPicker)
+  [![Platform](https://img.shields.io/cocoapods/p/RadioColorPicker.svg?style=flat)](https://cocoapods.org/pods/RadioColorPicker)
+  ![SwiftPM](https://img.shields.io/badge/SPM-supported-DE5C43.svg?style=flat)
+</div>
 
-[![CI Status](https://img.shields.io/travis/SunneyG/RadioColorPicker.svg?style=flat)](https://travis-ci.org/SunneyG/RadioColorPicker)
-[![Version](https://img.shields.io/cocoapods/v/RadioColorPicker.svg?style=flat)](https://cocoapods.org/pods/RadioColorPicker)
-[![License](https://img.shields.io/cocoapods/l/RadioColorPicker.svg?style=flat)](https://cocoapods.org/pods/RadioColorPicker)
-[![Platform](https://img.shields.io/cocoapods/p/RadioColorPicker.svg?style=flat)](https://cocoapods.org/pods/RadioColorPicker)
-![SwiftPM](https://img.shields.io/badge/SPM-supported-DE5C43.svg?style=flat)
+</br>
 
 ## Example
 

@@ -102,7 +102,7 @@ open class RadioColorPicker: UIView {
     }
   }
   open override var intrinsicContentSize: CGSize {
-    let width = CGFloat(colors.count) * pickerSize + contentInset.leading + contentInset.trailing + CGFloat(colors.count - 1) * horizontalSpacing
+    let width = CGFloat(colors.count) * pickerSize + contentInset.leading + contentInset.trailing + CGFloat(colors.count) * horizontalSpacing
     let height = pickerSize + contentInset.top + contentInset.bottom
     return .init(width: width, height: height)
   }
@@ -147,7 +147,7 @@ open class RadioColorPicker: UIView {
     let item = NSCollectionLayoutItem(layoutSize: itemSize)
     
     // Group
-    let widthDimension: NSCollectionLayoutDimension = scrollDirection == .vertical ?  .fractionalWidth(1) : .absolute(pickerSize + horizontalSpacing)
+    let widthDimension: NSCollectionLayoutDimension = scrollDirection == .vertical ?  .fractionalWidth(1) : .absolute(pickerSize)
     let groupSize = NSCollectionLayoutSize(
       widthDimension: widthDimension,
       heightDimension: .absolute(pickerSize))
@@ -155,6 +155,18 @@ open class RadioColorPicker: UIView {
       layoutSize: groupSize,
       subitems: [item])
     group.interItemSpacing = scrollDirection == .vertical ? .flexible(horizontalSpacing) : .fixed(horizontalSpacing)
+    group.edgeSpacing = scrollDirection == .vertical ?
+      .init(
+        leading: .flexible(horizontalSpacing / 2),
+        top: .fixed(0),
+        trailing: .flexible(horizontalSpacing / 2),
+        bottom: .fixed(0))
+    :
+      .init(
+        leading: .fixed(horizontalSpacing / 2),
+        top: .fixed(0),
+        trailing: .fixed(horizontalSpacing / 2),
+        bottom: .fixed(0))
     
     // Section
     let section = NSCollectionLayoutSection(group: group)
